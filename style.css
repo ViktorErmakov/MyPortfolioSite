@@ -88,7 +88,8 @@ body {
   }
   
   .intro h3,
-  .portfolio h3 {
+  .portfolio h3,
+   {
 	margin: 0 0 12px;
 	font-size: 28px;
 	line-height: 40px;
@@ -110,11 +111,11 @@ body {
 	background-position: left;
   }
   
-  .skill-html {
+  .skills-html {
 	background-image: url("img/icon-html.svg");
   }
   
-  .skill-css {
+  .skills-css {
 	background-image: url("img/icon-css.svg");
   }
   
