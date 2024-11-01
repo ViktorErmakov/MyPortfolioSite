@@ -1,110 +1,128 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="description" content="Портфолио 1С Разработчика Ермакова Виктора Викторовича">
-	  <meta name="keywords" content="Ермаков Виктор Викторович, ермаков виктор викторович, 1С Программист, Frontnd developer">
-    <meta name="author" content="Ермаков Виктор Викторович">
-    <meta name="generator" content="VSC">
-    <title>Портфолио Junior верстальщика</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700|Old+Standard+TT&display=swap&subset=cyrillic" rel="stylesheet">
-  </head>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="Портфолио 1С Разработчика Ермакова Виктора Викторовича">
+  <meta name="keywords"
+    content="Ермаков Виктор Викторович, ермаков виктор викторович, 1С Программист, Frontnd developer">
+  <meta name="author" content="Ермаков Виктор Викторович">
+  <meta name="generator" content="VSC">
+  <title>Сайт-визитка разработчика 1С</title>
+  <link rel="stylesheet" href="style.css">
+  <link
+    href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700|Old+Standard+TT&display=swap&subset=cyrillic"
+    rel="stylesheet">
+</head>
 
 <body>
+
   <header class="page-header">
-    <!-- <div class="container">
-      <a class="header-email" href="mailto:79091602201@yandex.ru">79091602201@yandex.ru</a>
-      <a class="header-phone" href="tel:+79091602201">+7 909 160 22 01</a>
-    </div> -->
+    <nav>
+      <a href="#about" class="nav__link">Обо мне</a>
+      <a href="#1C" class="nav__link">Проекты 1С</a>
+      <a href="#html" class="nav__link">Проекты HTML</a>
+    </nav>
+
+    <section class="hero-image">
+      <div class="container">
+        <h1 class="heading">Ермаков Виктор Викторович</h1>
+        <p>Разработчик на платформе 1С / Фронтенд разработчик </p>
+      </div>
+    </section>
   </header>
 
-  <section class="hero-image">
-    <div class="container">
-      <h1 class="heading">Ермаков Виктор Викторович</h1>
-      <p>Разработчик на платформе 1С / Фронтенд разработчик </p>
-    </div>
-  </section>
+  <main>
+    <section class="intro">
 
-  <section class="intro">
+      <div class="container" id="about">
+        <!-- <h2 class="subheading">Давайте познакомимся</h2> -->
+        <figure class="user-image">
+          <img src="files/1.jpg" alt="моя фотография" width="700">
+        </figure>
+        <h3>Обо мне</h3>
+        <ol>
+          <li>Имею свой аккаунт на <a href="https://github.com/ViktorErmakov">GitHub</a>
+            Там можно ознакомиться с моей деятельностью в мире «около 1С» а так же продвижениями в направлении Frontend
+            Developer</li>
+          <li>На <a href="http://infostart.ru/profile/491528/">infostart</a> есть различные публикации (Расширение,
+            статьи, обучающее видео, обработки)</li>
+          <li>Есть несколько обучающих видео роликов на <a
+              href="https://www.youtube.com/channel/UC1xxxNk704CR-jGwAm09diw">YouTube</a>
+          </li>
+        </ol>
+        <blockquote>Я фанат своей профессии!</blockquote>
 
-    <div class="container">
-      <h2 class="subheading">Давайте познакомимся</h2>
-      <figure class="user-image">
-        <img src="files/1.JPG" alt="моя фотография" width="900">
-      </figure>
-      <h3>Пара слов о себе</h3>
+        <h3>Чем могу быть полезен</h3>
+        <ul>
+          <li>Помогу составить карту развития разработчику 1С</li>
+          <li>Расскажу об инструментах тестирования на платформе 1С</li>
+          <li>Подкину идеи для пет проектов</li>
+          <li>Ну и просто готов дружить с такими же фанатами профессии</li>
+        </ul>
+      </div>
+    </section>
 
-      <p>1. Имею свой аккаунт на <a href="https://github.com/ViktorErmakov">GitHub</a>
-        Там можно ознакомиться с моей деятельностью в мире «около 1С» а так же продвижениями в направлении Frontend Developer
-      </p>
-      <p>2. На <a href="http://infostart.ru/profile/491528/">infostart</a> есть различные публикации (Расширение, статьи, обучающее видео, обработки).</p>
-      <p>3. Есть несколько обучающих видео роликов на <a href="https://www.youtube.com/channel/UC1xxxNk704CR-jGwAm09diw">YouTube</a></p>
-      <p>Я фанат своей профессии!</p>
+    <article class="portfolio">
+        <div class="container">
+          <section class="HTML_work" id="html">
+            <h2 class="subheading">Мои проекты HTML</h2>
 
-      <h3>Чем могу быть полезен</h3>
-      <p>1. Помогу составить карту развития разработчику 1С</p>
-      <p>2. Расскажу об инструментах тестирования на платформе 1С</p>
-      <P>3. Подкину идеи для пет проектов</P>
-      <p>4. Ну и просто готов дружить с такими же фанатиками</p>
-    </div>
-  </section>
+            <figure class="project-image">
+              <a href="https://viktorermakov.github.io/js30_memory_game/js30-memory/">
+                <img src="files/Mamory game.png" width="928" height="536" alt="project memory game">
+              </a>
+            </figure>
 
-  <section class="portfolio">
-    <div class="container">
-      <h2 class="subheading">Мои работы HTML</h2>
+            <figure class="project-image">
+              <a href="https://viktorermakov.github.io/js30_audio_player/js30_audio_player/">
+                <img src="files/Player.png" width="928" height="536" alt="project player">
+              </a>
+            </figure>
 
-      <figure class="project-image">
-        <a href="https://viktorermakov.github.io/js30_memory_game/js30-memory/">
-          <img src="files/Mamory game.png" width="928" height="536" alt="project memory game">
-        </a>
-      </figure>
+            <figure class="project-image">
+              <a href="https://viktorermakov.github.io/cssMemeSlider/cssMemeSlider/index.html">
+                <img src="files/slider.png" width="928" height="536" alt="project slider">
+              </a>
+            </figure>
 
-      <figure class="project-image">
-        <a href="https://viktorermakov.github.io/js30_audio_player/js30_audio_player/">
-          <img src="files/Player.png" width="928" height="536" alt="project player">
-        </a>
-      </figure>
+            <figure class="project-image">
+              <a href="https://viktorermakov.github.io/rsschool-cv/">
+                <img src="files/cv.png" width="928" height="536" alt="project cv">
+              </a>
+            </figure>
 
-      <figure class="project-image">
-        <a href="https://viktorermakov.github.io/cssMemeSlider/cssMemeSlider/index.html">
-          <img src="files/slider.png" width="928" height="536" alt="project slider">
-        </a>
-      </figure>
+            <figure class="project-image">
+              <a href="https://viktorermakov.github.io/cssBayan/cssBayan/index.html">
+                <img src="files/Bayan.png" width="928" height="536" alt="project bayan">
+              </a>
+            </figure>
 
-      <figure class="project-image">
-        <a href="https://viktorermakov.github.io/rsschool-cv/">
-          <img src="files/cv.png" width="928" height="536" alt="project cv">
-        </a>
-      </figure>
+            <figure class="project-image">
+              <a href="https://rolling-scopes-school.github.io/viktorermakov-JSFEPRESCHOOL2024Q2/shelter/">
+                <img src="files/Shelter.png" width="928" height="536" alt="project shelter">
+              </a>
+            </figure>
 
-      <figure class="project-image">
-        <a href="https://viktorermakov.github.io/cssBayan/cssBayan/index.html">
-          <img src="files/Bayan.png" width="928" height="536" alt="project bayan">
-        </a>
-      </figure>
+            <figure class="project-image">
+              <a href="https://rolling-scopes-school.github.io/viktorermakov-JSFEPRESCHOOL2022Q4/plants/">
+                <img src="files/Plants.png" width="928" height="536" alt="project plants">
+              </a>
+            </figure>
 
-      <figure class="project-image">
-        <a href="https://rolling-scopes-school.github.io/viktorermakov-JSFEPRESCHOOL2024Q2/shelter/">
-          <img src="files/Shelter.png" width="928" height="536" alt="project shelter">
-        </a>
-      </figure>
-      
-      <figure class="project-image">
-        <a href="https://rolling-scopes-school.github.io/viktorermakov-JSFEPRESCHOOL2022Q4/plants/">
-          <img src="files/Plants.png" width="928" height="536" alt="project plants">
-        </a>
-      </figure>
+            <figure class="project-image">
+              <a href="https://rolling-scopes-school.github.io/viktorermakov-JSFEPRESCHOOL2022Q4/momentum/">
+                <img src="files/Momentum.png" width="928" height="536" alt="project momentum">
+              </a>
+            </figure>
+          </section>
 
-      <figure class="project-image">
-        <a href="https://rolling-scopes-school.github.io/viktorermakov-JSFEPRESCHOOL2022Q4/momentum/">
-          <img src="files/Momentum.png" width="928" height="536" alt="project momentum">
-        </a>
-      </figure>
-
-      
-    </div>
-  </section>
+          <section class="1C_work" id="1C">
+            <h2 class="subheading">Мои проекты 1C</h2>
+          </section>
+        </div>
+    </article>
+  </main>
 
   <footer class="page-footer">
     <div class="container">
