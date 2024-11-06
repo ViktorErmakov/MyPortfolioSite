@@ -5,6 +5,8 @@
   /* --font-color: #807853; */
   /* --font2-color: #808080; */
   /* --black-color: #000000; */
+  --blue-border-opacity: rgba(0, 65, 125, .3);
+  --blue-border: rgba(0, 65, 125);
 }
 
 html {
@@ -58,7 +60,7 @@ blockquote {
   margin: 0 2rem;
   text-decoration: none;
   transition: color 0.5s;
-  color: #00417d;
+  color: var(--blue-border);
   font-weight: 600;
 }
 
@@ -87,7 +89,6 @@ blockquote {
 }
 
 .hero-image p {
-  margin: 0;
   font-size: 3.2rem;
   line-height: 4.8rem;
 }
@@ -128,7 +129,7 @@ blockquote {
   max-width: 115rem;
   max-height: 65rem;
   overflow: hidden;
-  border: .5rem solid #00417d;
+  border: .5rem solid var(--blue-border-opacity);
   border-radius: 1rem;
 }
 
@@ -200,7 +201,7 @@ blockquote {
   max-height: 0.8rem;
   margin: 1rem;
   cursor: pointer;
-  background-color: #00417d;
+  background-color: var(--blue-border);
   opacity: .5;
   border-radius: 1rem;
   transition: all .4s ease;
@@ -234,7 +235,7 @@ blockquote {
 .text {
   display: inline-block;
   font-size: 2rem;
-  color: #00417d;
+  color: var(--blue-border);
   opacity: .9;
   width: 100%;
   font-weight: bold;
@@ -245,102 +246,64 @@ blockquote {
   transform: scale(1.3);
 }
 
-/* Прокрутка слайдов HTML */
-#r1:checked ~ .slides {
-  transform: translateX(0);
-}
-
-#r2:checked ~ .slides {
-  transform: translateX(-12.5%);
-}
-
-#r3:checked ~ .slides {
-  transform: translateX(-25%);
-}
-
-#r4:checked ~ .slides {
-  transform: translateX(-37.5%);
-}
-
-#r5:checked ~ .slides {
-  transform: translateX(-50%);
-}
-
-#r6:checked ~ .slides {
-  transform: translateX(-62.5%);
-}
-
-#r7:checked ~ .slides {
-  transform: translateX(-75%);
-}
-
-#r8:checked ~ .slides {
-  transform: translateX(-87.5%);
-}
-
-/* Прокрутка слайдов 1C */
-#c1:checked ~ .slides_1C {
-  transform: translateX(0);
-}
-
-#c2:checked ~ .slides_1C {
-  transform: translateX(-25%);
-}
-
-#c3:checked ~ .slides_1C {
-  transform: translateX(-50%);
-}
-
-#c4:checked ~ .slides_1C {
-  transform: translateX(-75%);
-}
-
-/* Прокрутка текста HTML */
+/* Прокрутка слайдов и текстов HTML */
+#r1:checked ~ .slides,
 #r1:checked ~ .texts_wrapper .texts:nth-child(1) {
   transform: translateX(0);
 }
 
+#r2:checked ~ .slides,
 #r2:checked ~ .texts_wrapper .texts:nth-child(1) {
   transform: translateX(-12.5%);
 }
 
+#r3:checked ~ .slides,
 #r3:checked ~ .texts_wrapper .texts:nth-child(1) {
   transform: translateX(-25%);
 }
 
+#r4:checked ~ .slides,
 #r4:checked ~ .texts_wrapper .texts:nth-child(1) {
   transform: translateX(-37.5%);
 }
 
+#r5:checked ~ .slides,
 #r5:checked ~ .texts_wrapper .texts:nth-child(1) {
   transform: translateX(-50%);
 }
 
+#r6:checked ~ .slides,
 #r6:checked ~ .texts_wrapper .texts:nth-child(1) {
   transform: translateX(-62.5%);
 }
 
+#r7:checked ~ .slides,
 #r7:checked ~ .texts_wrapper .texts:nth-child(1) {
   transform: translateX(-75%);
 }
 
+#r8:checked ~ .slides,
 #r8:checked ~ .texts_wrapper .texts:nth-child(1) {
   transform: translateX(-87.5%);
 }
 
-/* Прокрутка текста 1C */
+/* Прокрутка слайдов и текстов 1C */
+#c1:checked ~ .slides_1C,
 #c1:checked ~ .texts_wrapper_1C .texts:nth-child(1) {
   transform: translateX(0);
 }
 
+#c2:checked ~ .slides_1C,
 #c2:checked ~ .texts_wrapper_1C .texts:nth-child(1) {
   transform: translateX(-25%);
 }
 
+#c3:checked ~ .slides_1C,
 #c3:checked ~ .texts_wrapper_1C .texts:nth-child(1) {
   transform: translateX(-50%);
 }
 
+#c4:checked ~ .slides_1C,
 #c4:checked ~ .texts_wrapper_1C .texts:nth-child(1) {
   transform: translateX(-75%);
 }
@@ -390,7 +353,7 @@ blockquote {
 }
 .page-footer {
   padding: 4rem 0;
-	background-color: #00417d;
+	background-color: var(--blue-border);
 }
 
 .section-list {
@@ -412,22 +375,30 @@ blockquote {
   height: 100%;
 }
 
-.contact-item:nth-child(1) {
+.email-icon {
   background-image: url(./img/2.svg);
 }
 
-.contact-item:nth-child(2) {
+.telegram-icon {
   background-image: url(./img/4.svg);
 }
 
-.contact-item:nth-child(3) {
+.whatsapp-icon {
+  background-image: url(./img/whatsapp.svg);
+}
+
+.infostart-icon {
+  background-image: url(./img/infostart.svg)
+}
+
+.github-icon {
   background-image: url(./img/3.svg);
 }
 
-.contact-item:nth-child(4) {
+.discord-icon {
   background-image: url(./img/5.svg);
 }
 
-.contact-item:nth-child(5) {
+.codewars-icon {
   background-image: url(./img/6.svg);
 }
