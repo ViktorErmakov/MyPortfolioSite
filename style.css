@@ -70,11 +70,12 @@ blockquote {
   transition: color 0.5s;
   color: var(--white-color);
   font-weight: 600;
+  
 }
 
 .nav__link:hover {
   color: #241b00;
-  text-decoration: underline;
+  /* text-decoration: underline; */
 }
 
 .page-footer .container {
