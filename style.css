@@ -8,6 +8,7 @@
   --blue-border-opacity: rgba(0, 65, 125, .3);
   --blue-border: rgba(0, 65, 125);
   --white-color: #f2f4f6;
+  --black-color: #001B24;
 }
 
 html {
@@ -25,7 +26,7 @@ body {
   min-width: 96rem;
   font-family: "Montserrat", "Helvetica", "Arial", sans-serif;
   line-height: 3.2rem;
-	color: #001B24;
+	color: var(--black-color);
 }
 
 .page-header {
@@ -85,7 +86,7 @@ blockquote {
 }
 
 .nav__link:hover {
-  color: #001B24;
+  color: var(--black-color);
   /* text-decoration: underline; */
 }
 
@@ -118,7 +119,6 @@ blockquote {
 .intro {
   margin: 0 0 4rem;
   font-weight: 500;
-  /* color: var(--white-color); */
 }
 
 .subheading {
@@ -237,7 +237,7 @@ blockquote {
   margin: 1rem;
   cursor: pointer;
   /* background-color: var(--blue-border); */
-  background-color: #001B24;
+  background-color: var(--black-color);
   opacity: .5;
   border-radius: 1rem;
   transition: all .4s ease;
@@ -272,7 +272,7 @@ blockquote {
   display: inline-block;
   font-size: 2rem;
   /* color: var(--blue-border); */
-  color: #001B24;
+  color: var(--black-color);
   opacity: .9;
   width: 100%;
   font-weight: bold;
