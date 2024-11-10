@@ -343,17 +343,6 @@ blockquote {
   transform: scale(1.3);
 }
 
-/* @media only screen and (max-width: 768px) {
-  .texts_wrapper {
-      margin-top: 10rem;
-  }
-
-  .footer_wrapper {
-      margin-top: 5rem;
-      justify-content: center;
-  }
-} */
-
 .HTML_work, .OneC_work {
   display: flex;
   flex-direction: column;
@@ -377,11 +366,16 @@ blockquote {
   height: 3rem;
   background-size: contain;
   background-repeat: no-repeat;
+  transition: all .4s ease;
 }
 
 .section-item:hover {
   transform: scale(1.4);
-  transition: all .4s ease;
+}
+
+.section-item:hover > a > svg > path,
+.infostart-icon:hover > a > svg > g > path {
+  fill: var(--black-color);
 }
 
 .section-item a{
@@ -390,34 +384,18 @@ blockquote {
   height: 100%;
 }
 
-.email-icon {
-  background-image: url(./img/2.svg);
-}
-
-.telegram-icon {
-  background-image: url(./img/4.svg);
-}
-
-.whatsapp-icon {
-  background-image: url(./img/whatsapp.svg);
-}
-
-.infostart-icon {
-  background-image: url(./img/infostart.svg)
-}
-
-.github-icon {
-  background-image: url(./img/3.svg);
-}
-
-.discord-icon {
-  background-image: url(./img/5.svg);
-}
-
-.codewars-icon {
-  background-image: url(./img/6.svg);
-}
-
 #html, #OneC {
   visibility: hidden;
+}
+
+@media only screen and (max-width: 768px) {
+  /* .texts_wrapper {
+      margin-top: 10rem;
+  } */
+
+  /* .footer_wrapper {
+      margin-top: 5rem;
+      justify-content: center;
+  } */
+  
 }
