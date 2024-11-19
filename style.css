@@ -173,7 +173,7 @@ blockquote {
   width: 25%;
 }
 
-.image_HTML img, .image_1C img {
+.image_HTML img, .image_1C img, .image_1C video {
   width: 100%;
   display: flex;
   
