@@ -147,7 +147,7 @@ blockquote {
 }
 
 .slides {
-  width: 800%;
+  width: 900%;
   height: 100%;
   display: flex;
   transition: all .4s ease;
@@ -184,7 +184,7 @@ blockquote {
   display: flex;
   justify-content: right;
   align-items: center;
-  margin-top: 3rem;
+  margin-top: 4rem;
 }
 
 .footer_wrapper_1C {
@@ -192,7 +192,7 @@ blockquote {
   display: flex;
   justify-content: right;
   align-items: center;
-  margin-top: 7rem;
+  margin-top: 4rem;
 }
 
 .nav {
@@ -229,18 +229,18 @@ blockquote {
   max-width: 85rem;
   position: absolute;
   overflow: hidden;
-  margin-top: 1.7rem;
+  margin-top: 2.7rem;
 }
 
 .texts_wrapper_1C {
   max-width: 90rem;
   position: absolute;
   overflow: hidden;
-  margin-top: 5.7rem;
+  margin-top: 2.7rem;
 }
 
 .texts {
-  width: 800%;
+  width: 900%;
   display: flex;
   transition: all .4s ease;
 }
@@ -267,37 +267,42 @@ blockquote {
 
 #r2:checked ~ .slides,
 #r2:checked ~ .texts_wrapper .texts:nth-child(1) {
-  transform: translateX(-12.5%);
+  transform: translateX(-11.11%);
 }
 
 #r3:checked ~ .slides,
 #r3:checked ~ .texts_wrapper .texts:nth-child(1) {
-  transform: translateX(-25%);
+  transform: translateX(-22.22%);
 }
 
 #r4:checked ~ .slides,
 #r4:checked ~ .texts_wrapper .texts:nth-child(1) {
-  transform: translateX(-37.5%);
+  transform: translateX(-33.33%);
 }
 
 #r5:checked ~ .slides,
 #r5:checked ~ .texts_wrapper .texts:nth-child(1) {
-  transform: translateX(-50%);
+  transform: translateX(-44.44%);
 }
 
 #r6:checked ~ .slides,
 #r6:checked ~ .texts_wrapper .texts:nth-child(1) {
-  transform: translateX(-62.5%);
+  transform: translateX(-55.55%);
 }
 
 #r7:checked ~ .slides,
 #r7:checked ~ .texts_wrapper .texts:nth-child(1) {
-  transform: translateX(-75%);
+  transform: translateX(-66.67%);
 }
 
 #r8:checked ~ .slides,
 #r8:checked ~ .texts_wrapper .texts:nth-child(1) {
-  transform: translateX(-87.5%);
+  transform: translateX(-77.78%);
+}
+
+#r9:checked ~ .slides,
+#r9:checked ~ .texts_wrapper .texts:nth-child(1) {
+  transform: translateX(-88.89%);
 }
 
 /* Прокрутка слайдов и текстов 1C */
