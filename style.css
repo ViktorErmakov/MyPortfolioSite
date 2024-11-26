@@ -379,7 +379,8 @@ blockquote {
 }
 
 .section-item:hover > a > svg > path,
-.infostart-icon:hover > a > svg > g > path {
+.infostart-icon:hover > a > svg > g > path,
+.youtube-icon:hover > a > svg {
   fill: var(--black-color);
 }
 
