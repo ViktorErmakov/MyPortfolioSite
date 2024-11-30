@@ -17,10 +17,17 @@ html {
 }
 
 body {
-  min-width: 96rem;
   font-family: "Montserrat", "Helvetica", "Arial", sans-serif;
   line-height: 3.2rem;
 	color: var(--black-color);
+}
+
+h3 {
+  text-align: center;
+  margin: 0 0 1.2rem;
+  font-size: 2.8rem;
+  line-height: 4rem;
+  font-weight: 500;
 }
 
 .page-header {
@@ -58,6 +65,7 @@ blockquote {
   max-width: 92.8rem;
   margin: 0 auto;
   padding: 0 1.6rem;
+  margin-bottom: 5rem;
 }
 
 .nav__link{
@@ -75,6 +83,7 @@ blockquote {
 
 .page-footer .container {
   max-width: 140.8rem;
+  margin-bottom: 0;
 }
 
 .hero-image {
@@ -100,7 +109,6 @@ blockquote {
 }
 
 .intro {
-  margin: 0 0 4rem;
   font-weight: 500;
 }
 
@@ -119,31 +127,27 @@ blockquote {
 }
 
 .user-image img{
-  width: 25rem;
+  min-width: 25rem;
   height: 30rem;
   object-fit: cover;
   border-radius: 50%;
   box-shadow: 0 1px 4px rgb(0 0 0 / 60%);
 }
 
-.intro h3,
-.portfolio h3 {
-  margin: 0 0 1.2rem;
-  font-size: 2.8rem;
-  line-height: 4rem;
-  font-weight: 500;
-}
-
 .intro p {
   margin: 0 0 3.2rem;
+}
+
+.portfolio {
+  padding: 0 1.6rem 20rem 1.6rem;
 }
 
 .slider, .slider_1C {
   max-width: 115rem;
   max-height: 58rem;
   overflow: hidden;
-  border: .5rem solid var(--blue-border-opacity);
-  border-radius: 1rem;
+  /* border: .5rem solid var(--blue-border-opacity);
+  border-radius: 1rem; */
 }
 
 .slides {
@@ -151,6 +155,7 @@ blockquote {
   height: 100%;
   display: flex;
   transition: all .4s ease;
+  
 }
 
 .slides_1C {
@@ -352,7 +357,7 @@ blockquote {
   display: flex;
   flex-direction: column;
   align-items: center;
-  min-height: 80rem;
+  margin-top: 19rem;
 }
  
 .page-footer {
@@ -394,14 +399,105 @@ blockquote {
   visibility: hidden;
 }
 
-@media only screen and (max-width: 768px) {
-  /* .texts_wrapper {
-      margin-top: 10rem;
-  } */
+@media only screen and (max-width: 1180px) {
+  
+  .heading {
+    font-size: 7rem;
+  }
 
-  /* .footer_wrapper {
-      margin-top: 5rem;
-      justify-content: center;
-  } */
+  .hero-image p {
+    font-size: 2.2rem;
+  }
+
+  .subheading {
+    font-size: 4.6rem;
+  }
+  
+
+  .container {
+    max-width: 82.8rem;
+    /* margin-bottom: 1rem; */
+  }
+
+  .page-footer .container {
+    /* max-width: 140.8rem; */
+  }
+
+  .hero-image .container {
+    max-width: 98.8rem;
+  }
+
+  .HTML_work, .OneC_work {
+    /* min-height: 80rem; */
+  }
+
+  .slider, .slider_1C {
+    /* max-width: 115rem;
+    max-height: 58rem; */
+    /* overflow: hidden;
+    border: .5rem solid var(--blue-border-opacity);
+    border-radius: 1rem; */
+  }
+
+  .footer_wrapper, 
+  .footer_wrapper_1C {
+    justify-content: center;
+    margin-top: 8rem;
+  }
+
+  .footer_wrapper_1C {
+    /* max-width: 128rem;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    margin-top: 4rem; */
+  }
+
+  .bar_shadow {
+    /* position: relative;
+    width: 4rem;
+    height: 4rem;
+    opacity: 0;
+    bottom: 1.5rem;
+    right: 0.5rem; */
+  }
+  
+  .bar {
+    /* max-width: 3rem;
+    max-height: 0.8rem;
+    margin: 1rem;
+    cursor: pointer;
+    background-color: var(--black-color);
+    opacity: .5;
+    border-radius: 1rem;
+    transition: all .4s ease; */
+  }
+
+  .texts_wrapper {
+    /* max-width: 85rem;
+    position: absolute;
+    overflow: hidden;
+    margin-top: 2.7rem; */
+  }
+  
+  .texts_wrapper_1C {
+    /* max-width: 90rem;
+    position: absolute;
+    overflow: hidden;
+    margin-top: 2.7rem; */
+  }
+
+  .section-item {
+    /* width: 3rem;
+    height: 3rem;
+    background-size: contain;
+    background-repeat: no-repeat;
+    transition: all .4s ease; */
+  }
+  
+}
+
+@media only screen and (max-width: 640px) {
+  
   
 }
