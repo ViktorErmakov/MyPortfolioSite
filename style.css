@@ -33,6 +33,9 @@ h3 {
 .page-header {
   width: 100%;
   position: fixed;
+  display: flex;
+  justify-content: end;
+  align-items: center;
   background-image: linear-gradient(0deg, rgba(108, 176, 198, 1) 15%, rgba(88, 171, 198, 1) 30%, rgba(68, 166, 198, 1) 45%, rgba(49, 161, 198, 1) 55%, rgba(29, 157, 198, 1) 70%, rgba(9, 152, 198, 1) 85%, rgba(0, 150, 198, 1) 100%);
   z-index: 10;
 }
@@ -82,8 +85,11 @@ blockquote {
 }
 
 .page-footer .container {
-  max-width: 140.8rem;
-  margin-bottom: 0;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0;
 }
 
 .hero-image {
@@ -143,8 +149,9 @@ blockquote {
 }
 
 .slider, .slider_1C {
+  display: flex;
+  flex-direction: column;
   max-width: 115rem;
-  max-height: 58rem;
   overflow: hidden;
   /* border: .5rem solid var(--blue-border-opacity);
   border-radius: 1rem; */
@@ -191,12 +198,12 @@ blockquote {
   align-items: center;
   margin-top: 4rem;
   justify-content: center;
-  margin-top: 8rem;
 }
 
 .nav {
   display: flex;
-  position: absolute;
+  justify-content: space-around;
+  width: 100%;
 }
 
 .bar_shadow {
@@ -209,8 +216,8 @@ blockquote {
 }
 
 .bar {
-  max-width: 3rem;
-  max-height: 0.8rem;
+  min-width: 7rem;
+  max-height: 1.8rem;
   margin: 1rem;
   cursor: pointer;
   background-color: var(--black-color);
@@ -224,17 +231,12 @@ blockquote {
   transform: scale(1.1);
 }
 
-.texts_wrapper {
-  position: absolute;
-  overflow: hidden;
-  margin-top: 2.7rem;
-}
-
+.texts_wrapper,
 .texts_wrapper_1C {
-  max-width: 90rem;
-  position: absolute;
+  /* position: absolute; */
   overflow: hidden;
   margin-top: 2.7rem;
+  max-width: 115rem;
 }
 
 .texts {
@@ -354,7 +356,9 @@ blockquote {
 }
  
 .page-footer {
-  padding: 4rem 0;
+  min-height: 8rem;
+  display: flex;
+  width: 100%;
 	background-image: linear-gradient(180deg, rgba(108, 176, 198, 1) 15%, rgba(88, 171, 198, 1) 30%, rgba(68, 166, 198, 1) 45%, rgba(49, 161, 198, 1) 55%, rgba(29, 157, 198, 1) 70%, rgba(9, 152, 198, 1) 85%, rgba(0, 150, 198, 1) 100%);
 }
 
@@ -362,11 +366,12 @@ blockquote {
   list-style: none;
   display: flex;
   justify-content: space-between;
+  width: 100%;
 }
 
 .section-item {
-  width: 3rem;
-  height: 3rem;
+  min-width: 3rem;
+  min-height: 3rem;
   background-size: contain;
   background-repeat: no-repeat;
   transition: all .4s ease;
@@ -392,22 +397,57 @@ blockquote {
   visibility: hidden;
 }
 
-@media only screen and (max-width: 1180px) {
+@media only screen and (max-width: 1200px) {
   
+  .page-header {
+    min-height: 8rem;
+    justify-content: center;
+  }
+
+  .nav__link {
+    font-size: 4rem;
+  }
+
   .heading {
-    font-size: 7rem;
+    font-size: 9rem;
   }
 
   .hero-image p {
-    font-size: 2.2rem;
+    font-size: 4.2rem;
+  }
+
+  .hero-image .container {
+    flex-direction: column;
+  }
+
+  .user-image img{
+    min-width: 35rem;
+    height: 40rem;
+  }
+
+  .user-image {
+    margin-top: 5rem;
+  }
+
+  h3 {
+    font-size: 4.2rem;
+    margin: 0 0 3rem;
   }
 
   .subheading {
     font-size: 4.6rem;
   }
+
+  li, a, blockquote {
+    font-size: 3.5rem;
+  }
+
+  .text {
+    font-size: 3.1rem;
+  }
   
   .container {
-    max-width: 82.8rem;
+    max-width: 120rem;
   }
 
   .portfolio {
@@ -417,12 +457,22 @@ blockquote {
   .hero-image .container {
     max-width: 98.8rem;
   }
+
+  .bar {
+    min-width: 8rem;
+    max-height: 2rem;
+  }
+
+  .section-item {
+    min-width: 5rem;
+    min-height: 5rem;
+  }
   
 }
 
 @media only screen and (max-width: 923px) {
   
-  .heading {
+  /* .heading {
     font-size: 6rem;
   }
 
@@ -447,13 +497,13 @@ blockquote {
 
   .HTML_work, .OneC_work {
     margin-top: 7rem;
-  }
+  } */
 
 }
 
 @media only screen and (max-width: 640px) {
   
-  .heading {
+  /* .heading {
     font-size: 5rem;
   }
 
@@ -467,6 +517,6 @@ blockquote {
 
   .HTML_work, .OneC_work {
     margin-top: 4rem;
-  }
+  } */
 
 }
