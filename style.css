@@ -42,7 +42,8 @@ h3 {
 
 .header_nav {
   display: flex;
-  justify-content: flex-end;
+  width: 100%;
+  justify-content: space-around;
   
 }
 
@@ -53,7 +54,7 @@ main {
   background-position: top center;
   background-attachment: fixed;
   background-size: cover;
-  padding: 0 0 10rem;
+  /* padding: 0 0 10rem; */
 }
 
 li, a, blockquote {
@@ -356,10 +357,13 @@ blockquote {
 }
  
 .page-footer {
-  min-height: 4rem;
+  min-height: 5rem;
   display: flex;
   justify-content: center;
   align-items: center;
+  position: fixed;
+  z-index: 10;
+  bottom: 0;
   width: 100%;
 	background-image: linear-gradient(180deg, rgba(108, 176, 198, 1) 15%, rgba(88, 171, 198, 1) 30%, rgba(68, 166, 198, 1) 45%, rgba(49, 161, 198, 1) 55%, rgba(29, 157, 198, 1) 70%, rgba(9, 152, 198, 1) 85%, rgba(0, 150, 198, 1) 100%);
 }
@@ -390,7 +394,8 @@ blockquote {
 }
 
 .section-item a{
-  display: block;
+  display: flex;
+  align-items: center;
   width: 100%;
   height: 100%;
 }
@@ -475,7 +480,7 @@ blockquote {
   }
 
   .slider, .slider_1C {
-   max-width: 100rem;
+   max-width: 95rem;
   }
 
   .page-footer {
