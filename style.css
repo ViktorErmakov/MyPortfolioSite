@@ -204,7 +204,8 @@ blockquote {
 .nav {
   display: flex;
   justify-content: space-around;
-  /* width: 100%; */
+  flex-wrap: wrap;
+  flex-grow: 1;
 }
 
 .bar_shadow {
