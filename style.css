@@ -43,7 +43,7 @@ h3 {
 .header_nav {
   display: flex;
   width: 100%;
-  justify-content: space-around;
+  justify-content: end;
   
 }
 
@@ -203,7 +203,7 @@ blockquote {
 
 .nav {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   flex-wrap: wrap;
   flex-grow: 1;
 }
@@ -427,6 +427,11 @@ blockquote {
     font-size: 9rem;
   }
 
+  .header_nav {
+    justify-content: space-around;
+    
+  }
+
   .hero-image p {
     font-size: 4.2rem;
   }
@@ -445,12 +450,12 @@ blockquote {
   }
 
   h3 {
-    font-size: 4.2rem;
+    font-size: 5rem;
     margin: 0 0 3rem;
   }
 
   .subheading {
-    font-size: 4.6rem;
+    font-size: 5rem;
   }
 
   li, a, blockquote {
@@ -458,7 +463,7 @@ blockquote {
   }
 
   .text {
-    font-size: 3.1rem;
+    font-size: 3.5rem;
   }
   
   .container {
@@ -474,8 +479,9 @@ blockquote {
   }
 
   .bar {
-    min-width: 8rem;
-    max-height: 2rem;
+    min-width: 15rem;
+    max-height: 3.6rem;
+    border-radius: 2rem;
   }
 
   .section-item {
@@ -484,7 +490,7 @@ blockquote {
   }
 
   .slider, .slider_1C {
-   max-width: 90rem;
+   max-width: 93rem;
   }
 
   .page-footer {
