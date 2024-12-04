@@ -502,6 +502,18 @@ blockquote {
   .page-footer {
     min-height: 15rem;
   }
+
+  /* Выделение кнопок HTML */
+  #r1:checked ~ .footer_wrapper .bar:nth-child(1),
+  #r2:checked ~ .footer_wrapper .bar:nth-child(2),
+  #r3:checked ~ .footer_wrapper .bar:nth-child(3),
+  #r4:checked ~ .footer_wrapper .bar:nth-child(4),
+  #r5:checked ~ .footer_wrapper .bar:nth-child(5),
+  #r6:checked ~ .footer_wrapper .bar:nth-child(6),
+  #r7:checked ~ .footer_wrapper .bar:nth-child(7),
+  #r8:checked ~ .footer_wrapper .bar:nth-child(8) {
+    transform: scale(1.1);
+  }
   
 }
 
