@@ -55,6 +55,7 @@ main {
   background-attachment: fixed;
   background-size: cover;
   /* padding: 0 0 10rem; */
+  height: 100%;
 }
 
 li, a, blockquote {
@@ -147,6 +148,7 @@ blockquote {
 
 .portfolio {
   padding: 0 1.6rem 10rem 1.6rem;
+  min-height: 203rem;
 }
 
 .slider, .slider_1C {
@@ -235,10 +237,9 @@ blockquote {
 
 .texts_wrapper,
 .texts_wrapper_1C {
-  /* position: absolute; */
   overflow: hidden;
   margin-top: 2.7rem;
-  max-width: 115rem;
+  /* max-width: 93rem; */
 }
 
 .texts {
@@ -254,6 +255,7 @@ blockquote {
   opacity: .9;
   width: 100%;
   font-weight: bold;
+  max-width: 93rem;
 }
 
 .bar:active {
@@ -356,9 +358,9 @@ blockquote {
   align-items: center;
   margin-top: 10rem;
 }
-.OneC_work {
+/* .OneC_work {
   margin-bottom: 20rem;
-}
+} */
  
 .page-footer {
   min-height: 5rem;
@@ -470,9 +472,9 @@ blockquote {
     max-width: 85rem;
   }
 
-  .portfolio {
+  /* .portfolio {
     padding: 0 1.6rem 5rem;
-  }
+  } */
 
   .hero-image .container {
     max-width: 98.8rem;
