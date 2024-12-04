@@ -59,7 +59,7 @@ main {
 }
 
 li, a, blockquote {
-  font-size: 1.6rem;
+  font-size: 2rem;
 }
 
 blockquote {
@@ -239,7 +239,7 @@ blockquote {
 .texts_wrapper_1C {
   overflow: hidden;
   margin-top: 2.7rem;
-  /* max-width: 93rem; */
+  max-width: 93rem;
 }
 
 .texts {
@@ -248,9 +248,13 @@ blockquote {
   transition: all .4s ease;
 }
 
+.texts_wrapper_1C .texts {
+  width: 400%;
+}
+
 .text {
   display: inline-block;
-  font-size: 2rem;
+  font-size: 3rem;
   color: var(--black-color);
   opacity: .9;
   width: 100%;
@@ -461,11 +465,11 @@ blockquote {
   }
 
   li, a, blockquote {
-    font-size: 3.5rem;
+    font-size: 4rem;
   }
 
   .text {
-    font-size: 3.5rem;
+    font-size: 4rem;
   }
   
   .container {
