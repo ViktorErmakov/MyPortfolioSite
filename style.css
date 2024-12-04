@@ -18,7 +18,7 @@ html {
 
 body {
   font-family: "Montserrat", "Helvetica", "Arial", sans-serif;
-  line-height: 3.2rem;
+  /* line-height: 3.2rem; */
 	color: var(--black-color);
 }
 
