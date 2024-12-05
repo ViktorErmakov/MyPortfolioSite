@@ -223,6 +223,7 @@ blockquote {
   min-width: 7rem;
   max-height: 1.8rem;
   margin: 1rem;
+  padding: 1rem;
   cursor: pointer;
   background-color: var(--black-color);
   opacity: .5;
@@ -512,6 +513,18 @@ blockquote {
   #r6:checked ~ .footer_wrapper .bar:nth-child(6),
   #r7:checked ~ .footer_wrapper .bar:nth-child(7),
   #r8:checked ~ .footer_wrapper .bar:nth-child(8) {
+    transform: scale(1.1);
+  }
+
+  /* Выделение кнопок 1С */
+  #c1:checked ~ .footer_wrapper_1C .bar:nth-child(1),
+  #c2:checked ~ .footer_wrapper_1C .bar:nth-child(2),
+  #c3:checked ~ .footer_wrapper_1C .bar:nth-child(3),
+  #c4:checked ~ .footer_wrapper_1C .bar:nth-child(4) {
+    transform: scale(1.1);
+  }
+
+  .bar:active {
     transform: scale(1.1);
   }
   
