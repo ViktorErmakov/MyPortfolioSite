@@ -19,7 +19,7 @@ function touchstart(event) {
         startY = null;
     }
 
-    console.log(event);
+    // console.log(event);
     
 }
 
@@ -39,9 +39,11 @@ function touchend(event) {
 
         if (endY > startY + offsetY) {
             console.log('слишком большой свайп вверх');
+            return;
         }
         if (endY < startY - offsetY) {
             console.log('слишком большой свайп вниз');
+            return;
         }
 
         // Найти текущий выбранный элемент
@@ -50,31 +52,28 @@ function touchend(event) {
         checkedHTML.forEach(function(element, key) {
             if (element.checked) {
                 checkedNumber = key;
-                // console.log(checkedNumber);
             }
-            
-            // console.log(element.checked);
         });
 
 
         if (endX > startX + offsetX) {
             //a left -> right swipe
-            console.log('свайп вправо');
-            // document.querySelectorAll('.slider_html')[checkedNumber].checked = false;
+            // console.log('свайп вправо');
             checkedNumber -= 1;
-            console.log(checkedNumber);
-            // попытка установить чекед
+            if (checkedNumber < 0) {
+                checkedNumber = document.querySelectorAll('.slider_html').length - 1;
+            }
             document.querySelectorAll('.slider_html')[checkedNumber].click();
-            // document.querySelectorAll('.slider_html')[checkedNumber].checked = true;
         }
         if (endX < startX - offsetX) {
             //a right -> left swipe
-            console.log('свайп влево');
-            console.log(checkedNumber);
-            // document.querySelectorAll('.slider_html')[checkedNumber].checked = false;
+            // console.log('свайп влево');
+            // console.log(checkedNumber);
             checkedNumber += 1;
             console.log(checkedNumber);
-            // document.querySelectorAll('.slider_html')[checkedNumber].checked = true;
+            if (checkedNumber > document.querySelectorAll('.slider_html').length - 1) {
+                checkedNumber = 0;
+            }
             document.querySelectorAll('.slider_html')[checkedNumber].click();
         }
     }
