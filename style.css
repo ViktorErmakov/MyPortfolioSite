@@ -43,7 +43,6 @@ h3 {
   display: flex;
   width: 100%;
   justify-content: end;
-  
 }
 
 main {
@@ -460,14 +459,10 @@ blockquote {
     font-size: 5rem;
   }
 
-  li, a, blockquote {
+  li, a, blockquote, .text {
     font-size: 4rem;
   }
 
-  .text {
-    font-size: 4rem;
-  }
-  
   .container {
     max-width: 85rem;
   }
