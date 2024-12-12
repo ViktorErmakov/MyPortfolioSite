@@ -5,6 +5,13 @@
 * Browsers: last 4 version
 */
 
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 /* cyrillic */
 @font-face {
   font-family: 'Montserrat';
@@ -68,8 +75,8 @@ h3 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-image: -webkit-gradient(linear, left bottom, left top, color-stop(15%, rgba(108, 176, 198, 1)), color-stop(30%, rgba(88, 171, 198, 1)), color-stop(45%, rgba(68, 166, 198, 1)), color-stop(55%, rgba(49, 161, 198, 1)), color-stop(70%, rgba(29, 157, 198, 1)), color-stop(85%, rgba(9, 152, 198, 1)), to(rgba(0, 150, 198, 1)));
   background-image: -o-linear-gradient(bottom, rgba(108, 176, 198, 1) 15%, rgba(88, 171, 198, 1) 30%, rgba(68, 166, 198, 1) 45%, rgba(49, 161, 198, 1) 55%, rgba(29, 157, 198, 1) 70%, rgba(9, 152, 198, 1) 85%, rgba(0, 150, 198, 1) 100%);
+  background-image: -webkit-gradient(linear, left bottom, left top, color-stop(15%, rgba(108, 176, 198, 1)), color-stop(30%, rgba(88, 171, 198, 1)), color-stop(45%, rgba(68, 166, 198, 1)), color-stop(55%, rgba(49, 161, 198, 1)), color-stop(70%, rgba(29, 157, 198, 1)), color-stop(85%, rgba(9, 152, 198, 1)), to(rgba(0, 150, 198, 1)));
   background-image: linear-gradient(0deg, rgba(108, 176, 198, 1) 15%, rgba(88, 171, 198, 1) 30%, rgba(68, 166, 198, 1) 45%, rgba(49, 161, 198, 1) 55%, rgba(29, 157, 198, 1) 70%, rgba(9, 152, 198, 1) 85%, rgba(0, 150, 198, 1) 100%);
   z-index: 10;
 }
@@ -513,8 +520,8 @@ blockquote {
   z-index: 10;
   bottom: 0;
   width: 100%;
-	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(15%, rgba(108, 176, 198, 1)), color-stop(30%, rgba(88, 171, 198, 1)), color-stop(45%, rgba(68, 166, 198, 1)), color-stop(55%, rgba(49, 161, 198, 1)), color-stop(70%, rgba(29, 157, 198, 1)), color-stop(85%, rgba(9, 152, 198, 1)), to(rgba(0, 150, 198, 1)));
 	background-image: -o-linear-gradient(top, rgba(108, 176, 198, 1) 15%, rgba(88, 171, 198, 1) 30%, rgba(68, 166, 198, 1) 45%, rgba(49, 161, 198, 1) 55%, rgba(29, 157, 198, 1) 70%, rgba(9, 152, 198, 1) 85%, rgba(0, 150, 198, 1) 100%);
+	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(15%, rgba(108, 176, 198, 1)), color-stop(30%, rgba(88, 171, 198, 1)), color-stop(45%, rgba(68, 166, 198, 1)), color-stop(55%, rgba(49, 161, 198, 1)), color-stop(70%, rgba(29, 157, 198, 1)), color-stop(85%, rgba(9, 152, 198, 1)), to(rgba(0, 150, 198, 1)));
 	background-image: linear-gradient(180deg, rgba(108, 176, 198, 1) 15%, rgba(88, 171, 198, 1) 30%, rgba(68, 166, 198, 1) 45%, rgba(49, 161, 198, 1) 55%, rgba(29, 157, 198, 1) 70%, rgba(9, 152, 198, 1) 85%, rgba(0, 150, 198, 1) 100%);
 }
 
