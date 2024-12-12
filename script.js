@@ -21,7 +21,6 @@ function touchstart(event) {
 
 function touchend(event) {
 
-    // console.log(event);
     if (event.target.offsetParent.className !== "slides" && event.target.offsetParent.className !== "slides_1C") {
         return;
     }
