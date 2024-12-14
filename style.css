@@ -733,7 +733,7 @@ blockquote {
   }
 
   .container {
-    max-width: 40rem;
+    max-width: 38rem;
     margin-bottom: 0rem;
   }
 
@@ -768,7 +768,7 @@ blockquote {
 
   .slider,
   .slider_1C {
-    max-width: 41rem;
+    max-width: 38rem;
   }
 
   .page-footer {
@@ -781,7 +781,7 @@ blockquote {
   }
 
   .portfolio {
-    min-height: 98rem;
+    min-height: 95rem;
   }
 
   .footer_wrapper,
@@ -798,4 +798,9 @@ blockquote {
     width: 0rem;
     height: 0rem;
   }
+
+  .texts_wrapper, .texts_wrapper_1C {
+    min-height: 8rem;
+}
+
 }
