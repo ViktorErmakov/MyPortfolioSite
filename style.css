@@ -619,11 +619,6 @@ blockquote {
     flex-direction: column;
   }
 
-  .user-image img {
-    min-width: 35rem;
-    min-height: 40rem;
-  }
-
   .user-image {
     margin-top: 5rem;
   }
