@@ -115,6 +115,14 @@ blockquote {
   font-size: 2rem;
 }
 
+li > a {
+  color:cornflowerblue;
+}
+
+li > a:visited {
+  color:cornflowerblue;
+}
+
 blockquote {
   margin-bottom: 3rem;
 }
@@ -379,6 +387,13 @@ blockquote {
   max-width: 93rem;
 }
 
+.text > a {
+  color: blue;
+}
+
+.text > a:visited {
+  color: blue;
+}
 .bar:active {
   opacity: .9;
   -webkit-transform: scale(1.3);
