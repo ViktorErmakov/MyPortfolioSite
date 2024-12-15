@@ -795,8 +795,9 @@ blockquote {
     height: 0rem;
   }
 
-  .texts_wrapper, .texts_wrapper_1C {
+  .texts_wrapper,
+  .texts_wrapper_1C {
     min-height: 8rem;
-}
+  }
 
 }
