@@ -389,7 +389,7 @@ blockquote {
   max-width: 93rem;
 }
 
-.text  a {
+.text a {
   color: blue;
   font-size: 3rem;
 }
@@ -762,6 +762,10 @@ blockquote {
   a,
   blockquote,
   .text {
+    font-size: 2rem;
+  }
+
+  .text a {
     font-size: 2rem;
   }
 
