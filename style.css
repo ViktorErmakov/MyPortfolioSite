@@ -349,11 +349,13 @@ blockquote {
   transition: all .4s ease;
 }
 
-.bar:hover {
-  opacity: .8;
-  -webkit-transform: scale(1.1);
-  -ms-transform: scale(1.1);
-  transform: scale(1.1);
+@media (hover: hover) {
+  .bar:hover {
+    opacity: .8;
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+  }
 }
 
 .texts_wrapper,
@@ -387,8 +389,9 @@ blockquote {
   max-width: 93rem;
 }
 
-.text > a {
+.text  a {
   color: blue;
+  font-size: 3rem;
 }
 
 .text > a:visited {

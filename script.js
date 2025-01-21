@@ -2,6 +2,8 @@
 var startX = null;
 document.addEventListener("touchstart", touchstart);
 document.addEventListener("touchend", touchend);
+const slider_html = document.querySelectorAll('.slider_html');
+const slider_1С = document.querySelectorAll('.slider_1С');
 
 function touchstart(event) {
 
@@ -37,8 +39,7 @@ function touchend(event) {
 
             // Найти текущий выбранный элемент
             let checkedNumber = 0;
-            let checkedHTML = document.querySelectorAll('.slider_1С');
-            checkedHTML.forEach(function (element, key) {
+            slider_1С.forEach(function (element, key) {
                 if (element.checked) {
                     checkedNumber = key;
                 }
@@ -49,17 +50,17 @@ function touchend(event) {
                 //a left -> right swipe
                 checkedNumber -= 1;
                 if (checkedNumber < 0) {
-                    checkedNumber = document.querySelectorAll('.slider_1С').length - 1;
+                    checkedNumber = slider_1С.length - 1;
                 }
-                document.querySelectorAll('.slider_1С')[checkedNumber].click();
+                slider_1С[checkedNumber].click();
             }
             if (endX < startX - offsetX) {
                 //a right -> left swipe
                 checkedNumber += 1;
-                if (checkedNumber > document.querySelectorAll('.slider_1С').length - 1) {
+                if (checkedNumber > slider_1С.length - 1) {
                     checkedNumber = 0;
                 }
-                document.querySelectorAll('.slider_1С')[checkedNumber].click();
+                slider_1С[checkedNumber].click();
             }
         }
 
@@ -68,8 +69,7 @@ function touchend(event) {
 
             // Найти текущий выбранный элемент
             let checkedNumber = 0;
-            let checkedHTML = document.querySelectorAll('.slider_html');
-            checkedHTML.forEach(function (element, key) {
+            slider_html.forEach(function (element, key) {
                 if (element.checked) {
                     checkedNumber = key;
                 }
@@ -80,17 +80,17 @@ function touchend(event) {
                 //a left -> right swipe
                 checkedNumber -= 1;
                 if (checkedNumber < 0) {
-                    checkedNumber = document.querySelectorAll('.slider_html').length - 1;
+                    checkedNumber = slider_html.length - 1;
                 }
-                document.querySelectorAll('.slider_html')[checkedNumber].click();
+                slider_html[checkedNumber].click();
             }
             if (endX < startX - offsetX) {
                 //a right -> left swipe
                 checkedNumber += 1;
-                if (checkedNumber > document.querySelectorAll('.slider_html').length - 1) {
+                if (checkedNumber > slider_html.length - 1) {
                     checkedNumber = 0;
                 }
-                document.querySelectorAll('.slider_html')[checkedNumber].click();
+                slider_html[checkedNumber].click();
             }
         }
     }
